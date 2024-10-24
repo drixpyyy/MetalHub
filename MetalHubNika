@@ -1,0 +1,97 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Metal Hub",
+   LoadingTitle = "Loading Metal Hub",
+   LoadingSubtitle = "A Gui By Drixpy",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "hEauhwBkzV", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Metal Hub",
+      Subtitle = "Get it in the discord",
+      Note = "Since the script is in testing heres the key:Real",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Real"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local Tab = Window:CreateTab("Main", 9011713775) -- Title, Image
+local Section = Tab:CreateSection("Main Scripts")
+
+Rayfield:Notify({
+   Title = "Join The Discord to be col",
+   Content = "pls bro(Check the console)",
+   Duration = 6.5,
+   Image = 13818367095,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Yes",
+         Callback = function()
+         Print("https://discord.gg/hEauhwBkzV Or Just DM me if it Isnt Working my discord is Drixpyyyy")
+      end
+   },
+},
+})
+
+local Button = Tab:CreateButton({
+   Name = "Best ChatBypasser",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow62x/catbypass/main/upfix"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Rivals(Solara Execute twice when using JJsploit)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cracklua/cracks/m/SilentRivals"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "UserCreation",
+   Callback = function()
+loadstring(game:HttpGet("https://cracklua.github.io/cracks/UserCreation"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Best Trolling GUI(Takes a second)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Bedwars(Works with Solara and JJ)",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/Loader'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "ATRPWW(Auto reports kids for saying random stuff WITH WARNINGS)",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/drixpyyy/ATRP/refs/heads/main/ATRPTWW'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "ATRP(same as ATRPWW but WITHOUT WARNINGS)",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/drixpyyy/ATRP/refs/heads/main/ATRPT'))()
+   end,
+})
+
+local Tab = Window:CreateTab("Credits/Info", 4483362458) -- Title, Image
+
+local Paragraph = Tab:CreateParagraph({Title = "Discords/Creds", Content = "Drixpyyyy:Owner lordmodzpro25: Second ChatBypasser "})
