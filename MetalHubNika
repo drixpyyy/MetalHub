@@ -51,16 +51,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow62x/catbypass/m
 })
 
 local Button = Tab:CreateButton({
-   Name = "Rivals(Solara Execute twice when using JJsploit)",
+   Name = "Rivals",
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/cracklua/cracks/m/SilentRivals"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/savinggracelua/cracks/m/SilentRivals"))()
    end,
 })
 
 local Button = Tab:CreateButton({
    Name = "UserCreation",
    Callback = function()
-loadstring(game:HttpGet("https://cracklua.github.io/cracks/UserCreation"))()
+loadstring(game:HttpGet("https://cracklua.github.io/savinggracelua/UserCreation"))()
    end,
 })
 
